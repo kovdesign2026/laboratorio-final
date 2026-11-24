@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Laboratorio Servidores Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Logo Laboratorio Redes">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="servicios.html">Servicios y Protocolos</a></li>
+                <li><a href="formulario.html">Pruebas GET / POST</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <section class="tarjeta">
+            <h1>Servidor Web Apache - Laboratorio Capa 7</h1>
+            <p>Bienvenido al entorno de pruebas desplegado en <strong>Ubuntu Server 22.04 (192.168.100.10)</strong> para
+                el análisis de los protocolos HTTP/1.1, HTTPS (TLS) y mecanismos de autenticación.</p>
+
+            <div id="estado-recursos" class="estado-js">Verificando carga de JavaScript...</div>
+
+            <div class="grid-3">
+                <div class="card-item">
+                    <h3>Fase 2: HTTP/1.1</h3>
+                    <p>Análisis de cabeceras Request/Response, códigos de estado y métodos GET, POST, PUT y DELETE.</p>
+                </div>
+                <div class="card-item">
+                    <h3>Fase 3: HTTPS / TLS</h3>
+                    <p>Cifrado de tráfico en puerto 443 mediante certificados X.509 autofirmados con OpenSSL.</p>
+                </div>
+                <div class="card-item">
+                    <h3>Fase 4: Autenticación</h3>
+                    <p>Comparativa de seguridad entre HTTP Basic Auth (Base64) y Digest Auth (Hash MD5).</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Universidad Libre - Facultad de Ingeniería | Redes de Computadores (Capa de Aplicación)</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Laboratorio Servidores Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Logo Laboratorio Redes">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html" class="activo">Servicios y Protocolos</a></li>
+                <li><a href="formulario.html">Pruebas GET / POST</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <section class="tarjeta">
+            <h1>Arquitectura y Servicios Configurados</h1>
+            <p>Este servidor forma parte de la topología de red aislada <code>192.168.100.0/24</code> junto con el
+                cliente Linux Mint (<code>192.168.100.20</code>) y el analizador Kali Linux
+                (<code>192.168.100.30</code>).</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Servicio / Ruta</th>
+                        <th>Puerto</th>
+                        <th>Mecanismo de Seguridad</th>
+                        <th>Propósito en el Laboratorio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>http://192.168.100.10/</code></td>
+                        <td>80 (TCP)</td>
+                        <td>Ninguno (Texto plano)</td>
+                        <td>Captura de tráfico HTTP sin cifrar en Wireshark.</td>
+                    </tr>
+                    <tr>
+                        <td><code>https://192.168.100.10/</code></td>
+                        <td>443 (TCP)</td>
+                        <td>TLS + Certificado X.509</td>
+                        <td>Inspección del Handshake TLS y tráfico cifrado.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/privado/</code></td>
+                        <td>80 / 443</td>
+                        <td>HTTP Basic Authentication</td>
+                        <td>Demostración de credenciales codificadas en Base64.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/seguro/</code></td>
+                        <td>80 / 443</td>
+                        <td>HTTP Digest Authentication</td>
+                        <td>Autenticación mediante desafío Nonce y hash MD5.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Universidad Libre - Facultad de Ingeniería | Redes de Computadores (Capa de Aplicación)</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

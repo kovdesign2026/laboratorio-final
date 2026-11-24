@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 50" width="220" height="50">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Icono de Red / Servidor -->
+  <g transform="translate(5, 5)">
+    <!-- Base del servidor -->
+    <rect x="0" y="2" width="34" height="10" rx="2" fill="url(#grad1)" />
+    <circle cx="6" cy="7" r="1.5" fill="#ffffff" />
+    <circle cx="11" cy="7" r="1.5" fill="#86efac" />
+    
+    <rect x="0" y="15" width="34" height="10" rx="2" fill="url(#grad1)" />
+    <circle cx="6" cy="20" r="1.5" fill="#ffffff" />
+    <circle cx="11" cy="20" r="1.5" fill="#86efac" />
+    
+    <rect x="0" y="28" width="34" height="10" rx="2" fill="url(#grad1)" />
+    <circle cx="6" cy="33" r="1.5" fill="#ffffff" />
+    <circle cx="11" cy="33" r="1.5" fill="#38bdf8" />
+  </g>
+  
+  <!-- Texto -->
+  <text x="48" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#ffffff">LABORATORIO</text>
+  <text x="48" y="39" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#38bdf8">REDES DE COMPUTADORES</text>
+</svg>
